@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FRUISTA | Italian Kitchen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>FRUISTA</h1>
+  <p>Italian Kitchen</p>
+</header>
+
+<section class="hero">
+  <h2>Fresh Wood-Fired Italian Food</h2>
+  <p>Family Restaurant • Dine-In • Takeaway • Online Order</p>
+</section>
+
+<section class="menu">
+  <h2>🍕 Popular Pizzas</h2>
+
+  <div class="item">
+    <span>Classic Margherita</span>
+    <span>₹249</span>
+    <button onclick="addToCart('Classic Margherita',249)">Add</button>
+  </div>
+
+  <div class="item">
+    <span>Pizza Fiamma</span>
+    <span>₹269</span>
+    <button onclick="addToCart('Pizza Fiamma',269)">Add</button>
+  </div>
+
+  <div class="item">
+    <span>Peri Peri Paneer Pizza</span>
+    <span>₹299</span>
+    <button onclick="addToCart('Peri Peri Paneer Pizza',299)">Add</button>
+  </div>
+</section>
+
+<section class="cart">
+  <h2>🛒 Your Order</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button onclick="payNow()">Pay & Order</button>
+</section>
+
+<footer>
+  <p>📍 Nehru Park Rd, Sri Ganganagar, Rajasthan</p>
+  <p>⏰ 10:00 AM – 11:00 PM (All Days)</p>
+</footer>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
